@@ -1,0 +1,42 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{indentfirst}
+\usepackage[english, brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[style=abnt]{biblatex}
+\usepackage[left=3cm,top=3cm,right=2cm,bottom=2cm]{geometry}
+
+\title{Title here. Last to be done}
+\author{Author's Name here}
+\date{}
+\linespread{1.5}
+\addbibresource{X-citation.bib}
+\setlength\bibitemsep{1em}
+
+\begin{document}
+
+\maketitle
+
+\selectlanguage{english}
+\begin{abstract}
+    Summary here. Penultimate to be done.
+\end{abstract}
+
+\section{Introduction}
+This is test of citation and references \cite{test}.
+
+\section{Methodology}
+
+\section{Results and Discussion}
+
+\section{Conclusions}
+
+\section{References}
+\begin{refsection}[X-citation.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
+
+\end{document}

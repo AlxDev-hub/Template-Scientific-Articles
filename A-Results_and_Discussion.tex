@@ -1,0 +1,25 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{indentfirst}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[style=abnt]{biblatex}
+\usepackage[left=3cm,top=3cm,right=2cm,bottom=2cm]{geometry}
+
+\addbibresource{X-citation.bib}
+\setlength\bibitemsep{1em}
+
+\begin{document}
+
+\section{Results and Discussion}
+This is test of citation and references \cite{test}.
+
+\section{References}
+\begin{refsection}[X-citation.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
+
+\end{document}
